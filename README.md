@@ -2,7 +2,7 @@
 
 # browser-template
 
-My own ReadMe content goes here: 
+My own ReadMe content goes here: s
 
 ## [License](LICENSE)
 
