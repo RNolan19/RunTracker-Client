@@ -18,15 +18,25 @@ const onAddRunSuccess = function () {
   successMessage('Run Added successfully!')
   $('#sign-up').hide()
 
-  $('#sign-up').trigger('reset')
+  $('#add-run').trigger('reset')
 }
 
 const onAddRunFailure = function () {
   failureMessage('Add Run Failed')
-  $('#sign-up').trigger('reset')
+  $('#add-run').trigger('reset')
+}
+
+const onViewRunsSuccess = function () {
+  successMessage("Damn! That's a lot of running!")
+}
+
+const onViewRunsFailure = function () {
+  failureMessage('Hmmmm. There seems to be a problem pulling up your runs')
 }
 
 module.exports = {
   onAddRunSuccess,
-  onAddRunFailure
+  onAddRunFailure,
+  onViewRunsSuccess,
+  onViewRunsFailure
 }

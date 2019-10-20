@@ -13,6 +13,14 @@ const onAddRun = function (event) {
     .catch(ui.onAddRunFailure)
 }
 
+const onViewRuns = function (event) {
+  event.preventDefault()
+  api.onViewRuns()
+    .then(ui.onViewRunsSuccess)
+    .catch(ui.onViewRunsFailure)
+}
+
 module.exports = {
-  onAddRun
+  onAddRun,
+  onViewRuns
 }

@@ -14,9 +14,12 @@ $(() => {
   $('#sign-out').on('submit', authEvents.onSignOut)
 
   $('#add-run').on('submit', gameEvents.onAddRun)
+  $('#view-runs').on('submit', gameEvents.onViewRuns)
 
   $('#change-password').hide()
   $('.h2changepassword').hide()
   $('#sign-out').hide()
   $('.h2signout').hide()
+  $('#add-run').hide()
+  $('.h2addrun').hide()
 })

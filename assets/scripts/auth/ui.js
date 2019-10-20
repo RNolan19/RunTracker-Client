@@ -44,6 +44,8 @@ const onSignInSuccess = function (responseData) {
   $('.h2changepassword').show()
   $('#sign-out').show()
   $('.h2signout').show()
+  $('#add-run').show()
+  $('.h2addrun').show()
 }
 
 const onSignInFailure = function () {
