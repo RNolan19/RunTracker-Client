@@ -46,6 +46,8 @@ const onSignInSuccess = function (responseData) {
   $('.h2signout').show()
   $('#add-run').show()
   $('.h2addrun').show()
+  $('#view-runs').show()
+  $('.h2viewruns').show()
 }
 
 const onSignInFailure = function () {
@@ -77,6 +79,10 @@ const onSignOutSuccess = function (responseData) {
   $('.h2changepassword').hide()
   $('#sign-out').hide()
   $('.h2signout').hide()
+  $('#add-run').hide()
+  $('.h2addrun').hide()
+  $('#view-runs').hide()
+  $('.h2viewruns').hide()
 }
 
 const onSignOutFailure = function () {

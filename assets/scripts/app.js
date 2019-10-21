@@ -22,4 +22,6 @@ $(() => {
   $('.h2signout').hide()
   $('#add-run').hide()
   $('.h2addrun').hide()
+  $('#view-runs').hide()
+  $('.h2viewruns').hide()
 })

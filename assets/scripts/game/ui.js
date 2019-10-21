@@ -1,6 +1,7 @@
 'use strict'
 // require store object, so we can keep track of the user and their unique token
 const store = require('../store')
+const showRunsTemplate = require('../templates/run-listing.handlebars')
 
 const successMessage = function (newText) {
   $('#message').text(newText)
@@ -26,8 +27,11 @@ const onAddRunFailure = function () {
   $('#add-run').trigger('reset')
 }
 
-const onViewRunsSuccess = function () {
+const onViewRunsSuccess = (data) => {
   successMessage("Damn! That's a lot of running!")
+  console.log(data)
+  const showRunsHtml = showRunsTemplate({ runs: data.runs })
+  $('.content').append(showRunsHtml)
 }
 
 const onViewRunsFailure = function () {
