@@ -37,16 +37,30 @@
         <button>Change Password!</button>
       </form>
 
-      <h2 class='h2addrun'>Add Your Run</h2>
+      <h2 class='h2addrun'>Add A Run</h2>
       <form id="add-run">
         <input type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
         <input type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
         <button>Log Run</button>
       </form>
 
-      <h2 class='h2viewruns'>See All Your Runs</h2>
+      <h2 class='h2viewruns'>View All Your Runs</h2>
       <form id="view-runs">
         <button>View Runs</button>
+      </form>
+
+      <h2 class='h2updaterun'>Update A Run</h2>
+      <form id="update-run">
+        <input type="number" name="run[id]" placeholder="Enter Run # To Update">
+        <input type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
+        <input type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
+        <button>Update Run</button>
+      </form>
+
+      <h2 class='h2deleterun'>Delete A Run</h2>
+      <form id="delete-run">
+        <input type="number" name="run[id]" placeholder="Enter Run # To Delete ">
+        <button>Delete</button>
       </form>
 
       <h2 class='h2signout'>Sign Out</h2>

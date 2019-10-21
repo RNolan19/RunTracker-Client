@@ -1,17 +1,8 @@
 {{#each runs as |run|}}
   {{log book}}
   <section data-id="{{run.id}}">
-    <h3> Run Number: </h3>
     <h3>
-      {{run.id}}
-    </h3>
-    <h3>Miles Ran:</h3>
-    <h3>
-      {{run.miles_ran}}
-    </h3>
-    <h3>Duration In Minutes:</h3>
-    <h3>
-      {{run.duration_in_minutes}}
+      On Run #{{run.id}}, you ran {{run.miles_ran}} miles in {{run.duration_in_minutes}} minutes.
     </h3>
   </section>
 

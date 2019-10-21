@@ -48,6 +48,10 @@ const onSignInSuccess = function (responseData) {
   $('.h2addrun').show()
   $('#view-runs').show()
   $('.h2viewruns').show()
+  $('#delete-run').show()
+  $('.h2deleterun').show()
+  $('#update-run').show()
+  $('.h2updaterun').show()
 }
 
 const onSignInFailure = function () {
@@ -69,6 +73,8 @@ const onChangePasswordFailure = function () {
 
 const onSignOutSuccess = function (responseData) {
   successMessage('Signed out successfully!')
+  $('.content').empty()
+
   $('#sign-in').show()
   $('#sign-in').trigger('reset')
   $('#sign-up').show()
@@ -83,6 +89,11 @@ const onSignOutSuccess = function (responseData) {
   $('.h2addrun').hide()
   $('#view-runs').hide()
   $('.h2viewruns').hide()
+  $('#delete-run').hide()
+  $('.h2deleterun').hide()
+  $('#update-run').hide()
+  $('.h2updaterun').hide()
+
 }
 
 const onSignOutFailure = function () {

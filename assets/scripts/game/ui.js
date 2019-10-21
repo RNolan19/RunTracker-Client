@@ -17,7 +17,7 @@ const failureMessage = function (newText) {
 
 const onAddRunSuccess = function () {
   successMessage('Run Added successfully!')
-  $('#sign-up').hide()
+  $('.content').empty()
 
   $('#add-run').trigger('reset')
 }
@@ -28,7 +28,7 @@ const onAddRunFailure = function () {
 }
 
 const onViewRunsSuccess = (data) => {
-  successMessage("Damn! That's a lot of running!")
+  store.runs = data.runs
   console.log(data)
   const showRunsHtml = showRunsTemplate({ runs: data.runs })
   $('.content').append(showRunsHtml)
@@ -38,9 +38,35 @@ const onViewRunsFailure = function () {
   failureMessage('Hmmmm. There seems to be a problem pulling up your runs')
 }
 
+const onDeleteRunSuccess = function () {
+  successMessage('Run Deleted Successfully')
+  $('#delete-run').trigger('reset')
+  $('.content').empty()
+}
+
+const onDeleteRunFailure = function () {
+  failureMessage('Delete Run Failed')
+  $('#delete-run').trigger('reset')
+}
+
+const onUpdateRunSuccess = function () {
+  successMessage('Run Updated Successfully')
+  $('#update-run').trigger('reset')
+  $('.content').empty()
+}
+
+const onUpdateRunFailure = function () {
+  failureMessage('Updated Run NOT Added.  Try Again')
+  $('#update-run').trigger('reset')
+}
+
 module.exports = {
   onAddRunSuccess,
   onAddRunFailure,
   onViewRunsSuccess,
-  onViewRunsFailure
+  onViewRunsFailure,
+  onDeleteRunSuccess,
+  onDeleteRunFailure,
+  onUpdateRunSuccess,
+  onUpdateRunFailure
 }

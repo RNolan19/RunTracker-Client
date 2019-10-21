@@ -20,7 +20,25 @@ const onViewRuns = function (event) {
     .catch(ui.onViewRunsFailure)
 }
 
+const onDeleteRun = function (event) {
+  event.preventDefault()
+  const formData = getFormFields(event.target)
+  api.onDeleteRun(formData)
+    .then(ui.onDeleteRunSuccess)
+    .catch(ui.onDeleteRunFailure)
+}
+
+const onUpdateRun = function (event) {
+  event.preventDefault()
+  const formData = getFormFields(event.target)
+  api.onUpdateRun(formData)
+    .then(ui.onUpdateRunSuccess)
+    .catch(ui.onUpdateRunFailure)
+}
+
 module.exports = {
   onAddRun,
-  onViewRuns
+  onViewRuns,
+  onDeleteRun,
+  onUpdateRun
 }

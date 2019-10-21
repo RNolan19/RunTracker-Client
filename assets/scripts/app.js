@@ -15,6 +15,8 @@ $(() => {
 
   $('#add-run').on('submit', gameEvents.onAddRun)
   $('#view-runs').on('submit', gameEvents.onViewRuns)
+  $('#delete-run').on('submit', gameEvents.onDeleteRun)
+  $('#update-run').on('submit', gameEvents.onUpdateRun)
 
   $('#change-password').hide()
   $('.h2changepassword').hide()
@@ -24,4 +26,8 @@ $(() => {
   $('.h2addrun').hide()
   $('#view-runs').hide()
   $('.h2viewruns').hide()
+  $('#delete-run').hide()
+  $('.h2deleterun').hide()
+  $('#update-run').hide()
+  $('.h2updaterun').hide()
 })

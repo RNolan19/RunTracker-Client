@@ -1,5 +1,6 @@
 const config = require('../config')
 const store = require('../store')
+const showRunsTemplate = require('../templates/run-listing.handlebars')
 
 const addRun = function (formData) {
   return $.ajax({
@@ -33,7 +34,35 @@ const onViewRuns = function () {
   })
 }
 
+const onDeleteRun = function (formData) {
+  return $.ajax({
+    method: 'DELETE',
+    url: config.apiUrl + '/runs/' + formData.run.id,
+    headers: {
+      // the token was saved in the store when we signed up
+      // we access it through store.user.token
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: formData
+  })
+}
+
+const onUpdateRun = function (formData) {
+  return $.ajax({
+    method: 'PATCH',
+    url: config.apiUrl + '/runs/' + formData.run.id,
+    headers: {
+      // the token was saved in the store when we signed up
+      // we access it through store.user.token
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: formData
+  })
+}
+
 module.exports = {
   addRun,
-  onViewRuns
+  onViewRuns,
+  onDeleteRun,
+  onUpdateRun
 }
