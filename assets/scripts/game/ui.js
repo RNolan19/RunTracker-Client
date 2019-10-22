@@ -31,6 +31,7 @@ const onViewRunsSuccess = (data) => {
   store.runs = data.runs
   console.log(data)
   const showRunsHtml = showRunsTemplate({ runs: data.runs })
+  $('.content').empty()
   $('.content').append(showRunsHtml)
 }
 
