@@ -13,9 +13,35 @@
     </head>
 
     <body>
-      <h1>Run Tracker</h1>
-      <h2 id="message"></h2>
+    <nav class="navbar navbar-dark bg-dark bg-primary justify-content-between">
+  <a class="navbar-brand">RunTracker</a>
+  <form class="form-inline h2signup" id="sign-up">
+    <input class="form-control mr-sm-2" type="email" name="credentials[email]" placeholder="Enter email....">
+    <input class="form-control mr-sm-2" type="password" name="credentials[password]" placeholder="Enter password....">
+    <input class="form-control mr-sm-2"  type="password" name="credentials[password_confirmation]" placeholder="Enter password again....">
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Sign Up</button>
+  </form>
 
+  <form class='form-inline h2signin' id="sign-in">
+    <input class="form-control mr-sm-2" type="email" name="credentials[email]" placeholder="Enter email....">
+    <input class="form-control mr-sm-2" type="password" name="credentials[password]" placeholder="Enter password....">
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Sign In!</button>
+  </form>
+
+  <form class='form-inline h2addrun' id="add-run">
+    <input class="form-control mr-sm-2" type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
+    <input class="form-control mr-sm-2" type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Log Run</button>
+  </form>
+
+  <form class='form-inline h2viewruns' id="view-runs">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit">View Runs</button>
+  </form>
+
+</nav>
+
+      <h2 id="message"></h2>
+<!--
       <h2 class='h2signup'>Sign-up</h2>
       <form id="sign-up">
         <input type="email" name="credentials[email]" placeholder="Enter email....">
@@ -49,7 +75,7 @@
       <form id="view-runs">
         <button>View Runs</button>
       </form>
-
+-->
       <h2 class='h2updaterun'>Update A Run</h2>
       <form id="update-run">
         <input type="number" name="run[id]" placeholder="Enter Run # To Update">
