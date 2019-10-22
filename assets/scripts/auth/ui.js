@@ -61,9 +61,7 @@ const onSignInFailure = function () {
 
 const onChangePasswordSuccess = function () {
   successMessage('Password changed successfully!')
-  $('#change-password').hide()
-  $('.h2changepassword').hide()
-  $('#schange-password').trigger('reset')
+  $('#change-password').trigger('reset')
 }
 
 const onChangePasswordFailure = function () {
