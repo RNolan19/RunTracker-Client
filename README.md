@@ -2,7 +2,24 @@
 
 # browser-template
 
-My own ReadMe content goes here: s
+Run Tracker Client
+
+Technologies used:
+HTML
+CSS
+Bootstrap
+Javascript
+Jquery
+AJAX
+
+App Description:
+
+As the name implies, this is a simple RunTracker Single Page Application(SPA).
+The app enables runners to track their run history. The API stores data pertaining
+to how many miles the users has run and and how many minutes the user has ran for.
+New users must create an account to sign in.  Once signed in, users can create
+a run, update a run, delete a run, and view all past runs.  They can also perform
+very exciting tasks like signing out and changing their password. 
 
 ## [License](LICENSE)
 
