@@ -2,7 +2,7 @@
 
 # Run Tracker Client
 
-## Technologies used:**
+## Technologies used:
 HTML
 CSS
 Bootstrap
@@ -55,5 +55,6 @@ User Stories
 
 ## Links
 
-[Wire Frames:](https://imgur.com/gallery/kLwF1M3)
-[Back End GitHub Repo:](https://github.com/RNolan19/RunTracker--Backend)
+[Wire Frames](https://imgur.com/gallery/kLwF1M3)
+
+[Back End GitHub Repo](https://github.com/RNolan19/RunTracker--Backend)
