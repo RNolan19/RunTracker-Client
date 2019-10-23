@@ -12,6 +12,9 @@ body {
   background: url(image.png) no-repeat center center fixed;
   background-size: 100% 100%;
   color: red;
+  text-align: center;
+  justify-content: center;
+
 }
 
 .navbar {
@@ -22,6 +25,8 @@ body {
   text-align: center;
 }
 
-.h2signout {
-  align-items: ce
+.content {
+  display:inline-table;
+
+  width: 50%;
 }
