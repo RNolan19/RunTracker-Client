@@ -28,11 +28,9 @@ const onSignUpFailure = function () {
 
 const onSignInSuccess = function (responseData) {
   successMessage('Signed in successfully!')
-  console.log('response data is', responseData)
   // save the user we got from the API inside of 'store', so we can use it later
   // from any file
   store.user = responseData.user
-  console.log('store is', store)
 
   //  a good place to hide the sign in button
   $('#sign-in').hide()
