@@ -61,4 +61,4 @@ User Stories
 
 [Deployed Client](https://rnolan19.github.io/RunTracker-Client/)
 
-[Back End GitHub Repo](https://tranquil-lake-32578.herokuapp.com/)
+[Deployed API](https://tranquil-lake-32578.herokuapp.com/)
