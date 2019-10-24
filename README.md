@@ -58,3 +58,7 @@ User Stories
 [Wire Frames](https://imgur.com/gallery/kLwF1M3)
 
 [Back End GitHub Repo](https://github.com/RNolan19/RunTracker--Backend)
+
+[Deployed Client](https://rnolan19.github.io/RunTracker-Client/)
+
+[Back End GitHub Repo](https://tranquil-lake-32578.herokuapp.com/)
