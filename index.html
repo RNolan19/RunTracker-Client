@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>RunTracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark bg-primary justify-content-sm-between">
+    <a class="navbar-brand">RunTracker</a>
+    <form class="form-inline h2signup" id="sign-up">
+      <input class="form-control mr-sm-2" type="email" name="credentials[email]" placeholder="Enter email....">
+      <input class="form-control mr-sm-2" type="password" name="credentials[password]" placeholder="Enter password....">
+      <input class="form-control mr-sm-2" type="password" name="credentials[password_confirmation]" placeholder="Enter password again....">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Sign Up</button>
+    </form>
+
+    <form class='form-inline h2signin' id="sign-in">
+      <input class="form-control mr-sm-2" type="email" name="credentials[email]" placeholder="Enter email....">
+      <input class="form-control mr-sm-2" type="password" name="credentials[password]" placeholder="Enter password....">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Sign In!</button>
+    </form>
+
+    <form class='form-inline h2addrun col-xs-4' id="add-run">
+      <input class="form-control mr-sm-2" type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
+      <input class="form-control mr-sm-2" type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Log Run</button>
+    </form>
+    <!--
+  <form class='form-inline h2viewruns' id="view-runs">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit">View Runs</button>
+  </form>
+-->
+    <form class='form-inline h2updaterun col-xs-4' id="update-run">
+      <input class="form-control mr-sm-2" type="number" name="run[id]" placeholder="Enter Run # To Update">
+      <input class="form-control mr-sm-2" type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
+      <input class="form-control mr-sm-2" type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Update Run</button>
+    </form>
+
+    <form class='form-inline h2deleterun col-xs-2' id="delete-run">
+      <input class="form-control mr-sm-0" type="number" name="run[id]" placeholder="Enter Run # To Delete ">
+      <button class="btn-success my-2 my-sm-0">Delete</button>
+    </form>
+
+  </nav>
+  <!--
+      <h2 class='h2signup'>Sign-up</h2>
+      <form id="sign-up">
+        <input type="email" name="credentials[email]" placeholder="Enter email....">
+        <input type="password" name="credentials[password]" placeholder="Enter password....">
+        <input type="password" name="credentials[password_confirmation]" placeholder="Enter password again....">
+        <button>Sign Up!</button>
+      </form>
+
+      <h2 class='h2signin'>Sign-in</h2>
+      <form id="sign-in">
+        <input type="email" name="credentials[email]" placeholder="Enter email....">
+        <input type="password" name="credentials[password]" placeholder="Enter password....">
+        <button>Sign In!</button>
+      </form>
+
+      <h2 class='h2changepassword'>Change Password</h2>
+      <form id="change-password">
+        <input type="password" name="passwords[old]" placeholder="Enter old password....">
+        <input type="password" name="passwords[new]" placeholder="Enter new password....">
+        <button>Change Password!</button>
+      </form>
+
+      <h2 class='h2addrun'>Add A Run</h2>
+      <form id="add-run">
+        <input type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
+        <input type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
+        <button>Log Run</button>
+      </form>
+-->
+  <form class='h2viewruns' id="view-runs">
+    <button class="btn btn-info my-2 my-sm-0 btn-block btn-large">View My Runs</button>
+  </form>
+  <!--
+      <h2 class='h2updaterun'>Update A Run</h2>
+      <form id="update-run">
+        <input type="number" name="run[id]" placeholder="Enter Run # To Update">
+        <input type="number" name="run[miles_ran]" placeholder="Enter Distance (In Miles)....">
+        <input type="number" name="run[duration_in_minutes]" placeholder="Enter Duration (In Minutes)....">
+        <button>Update Run</button>
+      </form>
+
+      <h2 class='h2deleterun'>Delete A Run</h2>
+      <form id="delete-run">
+        <input type="number" name="run[id]" placeholder="Enter Run # To Delete ">
+        <button>Delete</button>
+      </form>
+-->
+
+  <h2 id="message" class="message"></h2>
+
+  <section>
+    <div id="content" class="content"></div>
+  </section>
+
+    <nav class="navbar navbar-dark bg-dark bg-primary justify-content-between fixed-bottom">
+      <a class="navbar-brand">RunTracker- If You Don't Track It, It Doesn't Count</a>
+
+
+      <form class="form-inline h2changepassword" id="change-password">
+        <input class="form-control mr-sm-2" type="password" name="passwords[old]" placeholder="Enter old password....">
+        <input class="form-control mr-sm-2" type="password" name="passwords[new]" placeholder="Enter new password....">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Change Password</button>
+      </form>
+
+      <form class='h2signout' id="sign-out">
+        <button class="btn btn-danger my-2 my-sm-0 btn-block btn-large" type="submit">Sign Out!</button>
+      </form>
+
+    </nav>
+
+
+</body>
+
+</html>
